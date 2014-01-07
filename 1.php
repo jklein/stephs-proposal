@@ -2,7 +2,16 @@
 
 require 'phplib/bootstrap.php';
 
-if ($_POST['answer'] == 'correct answer') {
+$success = false;
+$answers = array(
+    'hoover dam',
+    'hooverdam',
+    'the hoover dam',
+    'thehooverdam',
+);
+
+
+if (validate_answer($answers)) {
     $success = true;
 }
 

@@ -19,3 +19,15 @@ $mustache = new Mustache_Engine(array(
     'logger' => new Mustache_Logger_StreamLogger('php://stderr'),
     'strict_callables' => true,
 ));
+
+function request($item) {
+    if (isset($_POST[$item])) {
+        return $_POST[$item];
+    } else {
+        return '';
+    }
+}
+
+function validate_answer($answers_array) {
+    return in_array(strtolower(request('answer')), $answers_array);
+}
