@@ -6,14 +6,14 @@ $success = false;
 $failure = false;
 $step = 8;
 
-$question = '';
+$question = 'Another physical clue. The hint is "Hunger Games".';
 
 $answers = array(
-    '',
+    'santo stefano di sessanio',
 );
 
-$success_img = '';
-$success_message = '';
+$success_img = '<img src="https://dl.dropboxusercontent.com/u/3249984/474115_564449401786_1569328280_o.jpg" width="545" height="708" />';
+$success_message = '<strong>Hehe.</strong> Dogs, horses, beautiful scenery, what more could you want?!';
 
 if (validate_answer($answers)) {
     $success = true;

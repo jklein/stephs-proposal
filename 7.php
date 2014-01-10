@@ -6,14 +6,16 @@ $success = false;
 $failure = false;
 $step = 7;
 
-$question = '';
+$question = 'Bear Cave!  We hiked this beautiful path last year.';
 
 $answers = array(
-    '',
+    'the flume',
+    'franconia notch',
+    'franconia notch park',
 );
 
-$success_img = '';
-$success_message = '';
+$success_img = '<img src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-frc3/1291763_617455377386_1215594736_o.jpg" width="721" height="541" />';
+$success_message = '<strong>Arrr!</strong> Look out!';
 
 if (validate_answer($answers)) {
     $success = true;
